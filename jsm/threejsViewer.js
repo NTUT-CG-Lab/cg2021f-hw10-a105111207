@@ -134,8 +134,8 @@ class threejsViewer {
                 uniforms = mesh.material.uniforms;
                 //uniforms['u_cmdata'].value = new DataTexture(colormap, 256, 1);
                 //or
-                //uniforms['u_cmdata'].value.image = { data:colormap };
-                //uniforms['u_cmdata'].value.needsUpdate = true;
+                uniforms['u_cmdata'].value.image = { data:colormap };
+                uniforms['u_cmdata'].value.needsUpdate = true;
 
                 uniforms['u_renderstyle'].value = arg.renderType;
             }
